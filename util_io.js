@@ -1,6 +1,6 @@
 async function getJSON(url) {
-    fetch(url).then((response) => {
-        var text = response.text();
+    fetch(url).then((response) => response.text())
+    .then(text => {
         console.log(text);
         var data = JSON.parse(text);
         console.log(data);
