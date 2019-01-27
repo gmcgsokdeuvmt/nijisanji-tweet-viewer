@@ -4,6 +4,7 @@ async function getJSON(url) {
         if ((request.readyState === 4) && (request.status === 200)) {
             var text = request.responseText;
             var data = JSON.parse(text);
+            console.log(data);
             return data;
         }
     }
