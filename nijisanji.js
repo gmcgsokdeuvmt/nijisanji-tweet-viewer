@@ -1,7 +1,8 @@
 var myJSON = new XMLHttpRequest();
 myJSON.onreadystatechange = function() {
     if ((myJSON.readyState === 4) && (myJSON.status === 200)) {
-        var data = JSON.parse(myJSON.responseText);
+        var text = myJSON.responseText;
+        var data = JSON.parse(text);
         console.log(data);
         alert(data.param);
     }
