@@ -5,7 +5,7 @@ async function getJSON(url) {
             var text = request.responseText;
             var data = JSON.parse(text);
             console.log(data);
-            return data;
+            resolve(data);
         }
     }
     request.open("GET",url, true);
