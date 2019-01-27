@@ -1,9 +1,5 @@
 async function getJSON(url) {
-    fetch(url).then((response) => response.text())
-    .then(text => {
-        var data = JSON.parse(text);
-        return data;
-      }).catch(() => {
-        console.log("error caught!");
-      });
+    const response = await fetch(url);
+    const result = await response.json();
+    return result;
 }
