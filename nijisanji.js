@@ -1,10 +1,7 @@
-var request = new XMLHttpRequest();
-request.onreadystatechange = function() {
-    if ((myJSON.readyState === 4) && (myJSON.status === 200)) {
-        var text = myJSON.responseText;
-        var data = JSON.parse(text);
-        console.log(data);
-    }
+async function main() {
+    url = 'resource/nijisanji.json';
+    const result = await getJSON(url);
+    console.log(result);
 }
-request.open("GET","resource/nijisanji.json", true);
-request.send(null);
+
+main()
