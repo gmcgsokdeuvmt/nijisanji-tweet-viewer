@@ -4,4 +4,4 @@ async function main() {
     console.log(result);
 }
 
-main();
+window.onload = main;
