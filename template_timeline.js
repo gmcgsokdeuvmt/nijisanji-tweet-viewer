@@ -8,7 +8,7 @@ function template_timeline(screen_name){
 function get_template_timelines(screen_name_list){
     var fragment = document.createDocumentFragment();
     for(let screen_name of screen_name_list){
-        var newLi = document.createElement('li');
+        var newLi = document.createElement('div');
         newLi.className = 'wrapper';
         newLi.innerHTML = template_timeline(screen_name); //call the function here..
         fragment.appendChild(newLi);
