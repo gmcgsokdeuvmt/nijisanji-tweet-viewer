@@ -1,0 +1,13 @@
+.container {
+    width: 1000px;
+    overflow: hidden;
+}
+
+.wrapper {
+    width: 300px;
+    float: left;
+}
+
+.twitter-tweet {
+    width: 300px;
+}
