@@ -11,4 +11,4 @@ async function main() {
     document.getElementById('container').appendChild(fragment);
 }
 
-main();
+window.onload = main;
