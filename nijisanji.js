@@ -1,4 +1,4 @@
-function main() {
+async function main() {
     url = 'resource/nijisanji.json';
     const result = await getJSON(url);
 
